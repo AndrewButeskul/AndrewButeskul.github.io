@@ -40,7 +40,3 @@ $("#send").on("click", function() {
 
 });
 
-// $("#cancel-mail").on("click", function() {
-// 	$("#mess-error").text(""); 
-// 	$("#MailForm").trigger("reset");
-// }

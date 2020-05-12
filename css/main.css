@@ -18,10 +18,6 @@ body {
 	margin-bottom: 50px;
 }
 
-.offer h1:hover{
-
-}
-
 .descript {
 	background-color: #FAF8F6; 
 	padding-bottom: 30px;  
@@ -134,9 +130,14 @@ a.more:hover{
 color:#fff; 
 }
 
+.services img{
+	width: 442px;
+	height: 267px; 
+}
+
 figure {
 	width: 442px;
-	height: 227;
+	height: 267px;
 	position: relative;
 	background-color: #000;
 }
