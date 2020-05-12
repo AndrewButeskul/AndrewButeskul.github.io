@@ -18,3 +18,25 @@ function Check() {
 	$("#mess-error").text(""); 
 };
 
+$.ajax({
+	url: "../php/mail.php",
+	type: 'POST',
+	cashe: false,
+	data: { 'name': name, 'email': email, 'question': question},
+	dataType: 'html',
+	beforeSend: function() {
+		$("#send").prop("disabled", true);
+	},
+	success: function() {
+		if (!data) {
+			alert("Произошли ошибки, сообщение не отправлено!")
+		}
+		else {
+			$("name").trigger("reset");
+			$("email").trigger("reset");
+			$("question").trigger("reset");
+		}
+		alert("Успешно отправлено!");
+		$("#send").prop("disabled", false);
+	}
+});
