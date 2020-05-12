@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Свадебное агентство</title>
+		<!-- Подключения всех нужных источников -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="https://kit.fontawesome.com/108dac5e1e.js" crossorigin="anonymous"></script>
+		<script src="js/my_script.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<a class="navbar-logo" href="index.html">
+						<img src="img/logo.png" alt="logo">
+						<span class="text-uppercase">Свадебное агентство</span>
+					</a>
+					<ul class="navbar-nav m-auto" >
+						<li class="nav_item">
+							<a class="nav-link" href="index.html">Гланвая</a>
+						</li>
+						<li class="nav_item">
+							<a class="nav-link" href="services.html">Услуги</a>
+						</li>
+						<li class="nav_item">
+							<a class="nav-link" href="about.html">О нас</a>
+						</li>
+						<li class="nav_item">
+							<a class="nav-link active" href="forma.html">Форма заказа</a>
+						</li>
+						<li class="nav_item">
+							<a class="nav-link" href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+					<div class="phone">
+						<span>+38 (067) 129-85-10 <br> +38 (063) 867-61-55</span>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div class="container">
+			<div class="row background">
+				<img src="img/forma_order.png" alt="background">
+				
+				<div class="col-xl-3 offset-3 form">
+					<div class="col-xl-12 name-form text-center">
+						<span class="text-uppercase">заказать консультацию</span>
+					</div>
+					<input type="text" class="form-control" name="user-name" id="name" placeholder="Ваше имя">
+        <input type="text" class="form-control" name="user-email" id="email"  placeholder="Ваше email">
+        <input type="text" class="form-control" name="user-question" id="question"  placeholder="Ваш вопрос">
+        <div class="mess-error text-center"  id="mess-error"></div>
+					<div class="col-xl-12 button_order text-center">
+						<button type="submit" id="send" onclick="Check()" class="btn btn-secondary btn-block"><span class="text-uppercase">отправить заявку</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="footer">
+				<div class="row">
+					<div class="col-xl-12 text-center">
+						<h2 class="text-uppercase">Свадебное агентство</h2>
+						<img class="icon" src="img/dove.png" alt="icon">
+					</div>
+					<div class="col-xl-2 offset-5"></div>
+					<ul class="col-xl-12 text-center network">
+						<li>
+							<a href="https://facebook.com/"><span></span></a>
+						</li>
+						<li>
+							<a href="https://instagram.com/"><span></span></a>
+						</li>
+						<li>
+							<a href="https://web.telegram.org/"><span></span></a>
+						</li>
+						<li>
+							<a href="https://www.viber.com/ua/"><span></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
