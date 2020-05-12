@@ -1,4 +1,4 @@
-function Mail() {
+$("#send").on("click", function() {
 	var name = $("#name").val().trim();
 	var email = $("#email").val().trim();
 	var question = $("#question").val().trim();
@@ -19,7 +19,7 @@ function Mail() {
 	$("#mess-error").text(""); 
 
 	$.ajax({
-	url: "../php/mail.php",
+	url: '../php/mail.php',
 	type: 'POST',
 	cashe: false,
 	data: { 'name': name, 'email': email, 'question': question},
@@ -28,19 +28,19 @@ function Mail() {
 		$("#send").prop("disabled", true);
 	},
 	success: function(data) {
-		if (!data) {
-			alert("Произошли ошибки, сообщение не отправлено!")
-		}
-		else {
-			// $("name").trigger("reset");
-			// $("email").trigger("reset");
-			// $("question").trigger("reset");
+		if (!data)
+			alert("Произошли ошибки, сообщение не отправлено!");		
+		else			
 			$("#MailForm").trigger("reset"); 
-		}
+		
 		alert("Успешно отправлено!");
 		$("#send").prop("disabled", false);
 	}
 });
 
-}
+});
 
+// $("#cancel-mail").on("click", function() {
+// 	$("#mess-error").text(""); 
+// 	$("#MailForm").trigger("reset");
+// }

@@ -5,14 +5,11 @@
 		<title>Свадебное агентство</title>
 		<!-- Подключения всех нужных источников -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/main.css">		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-		<script src="https://kit.fontawesome.com/108dac5e1e.js" crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-		<script src="js/my_script.js"></script>
-	</head>
-	
+		<script src="https://kit.fontawesome.com/108dac5e1e.js" crossorigin="anonymous"></script>				
+	</head>	
 	<body>
 		<header class="header">
 			<div class="container">
@@ -186,8 +183,8 @@
         <div class="mess-error text-center" id="mess-error"></div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-light" data-dismiss="modal">Отмена</button>
-        <button type="submit" id="send" onclick="Mail()" class="btn btn-light">Отправить</button>
+        <button type="submit" id="cancel-mail" class="btn btn-light" data-dismiss="modal">Отмена</button>
+        <button type="submit" id="send" class="btn btn-light">Отправить</button>
       </div>
   </form>
     </div>
@@ -218,6 +215,7 @@
 					</ul>
 				</div>
 			</div>
-		</div>
+		</div>				
+		<script src="js/my_script.js"></script>		
 	</body>
 </html>

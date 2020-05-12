@@ -117,8 +117,7 @@ body {
 }
 
 a.more {
-/*	border: 1px solid #D1A25F;
-*/	padding: 5px 25px 5px 25px; 
+	padding: 5px 25px 5px 25px; 
 	border-radius: 5px;  
 	text-decoration: none;
 	color: #D1A25F;
@@ -135,7 +134,36 @@ a.more:hover{
 color:#fff; 
 }
 
-.
+figure {
+	width: 442px;
+	height: 227;
+	position: relative;
+	background-color: #000;
+}
+
+figure:before{
+	content: "";
+	position: absolute;
+	top: 5%;
+	bottom: 5%;
+	left: 5%;
+	right: 5%;
+	border-top: 2px solid #D1A25F;
+	border-bottom: 2px solid #D1A25F;
+	border-bottom: 2px solid #D1A25F;
+	transition: 1s;
+	transform: scaleX(0);
+}
+
+figure:hover:before {
+	transform: scale(1);	
+}
+
+figure img:hover{
+	opacity: 80%;
+	transition: 1s;
+}
+
 /* --------------FORMA--------------*/
 
 .background {
