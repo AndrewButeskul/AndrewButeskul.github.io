@@ -1,7 +1,7 @@
-function Check() {
-	var name = $('#name').val().trim();
-	var email = $('#email').val().trim();
-	var question = $('#question').val().trim();
+function Mail() {
+	var name = $("#name").val().trim();
+	var email = $("#email").val().trim();
+	var question = $("#question").val().trim();
 
 	if (name == "") {
 		$("#mess-error").text("Введите имя");
@@ -15,10 +15,10 @@ function Check() {
 		$("#mess-error").text("Введите не менее 5 символов в вопросе");
 		return false; 
 	}
-	$("#mess-error").text(""); 
-};
 
-$.ajax({
+	$("#mess-error").text(""); 
+
+	$.ajax({
 	url: "../php/mail.php",
 	type: 'POST',
 	cashe: false,
@@ -27,16 +27,20 @@ $.ajax({
 	beforeSend: function() {
 		$("#send").prop("disabled", true);
 	},
-	success: function() {
+	success: function(data) {
 		if (!data) {
 			alert("Произошли ошибки, сообщение не отправлено!")
 		}
 		else {
-			$("name").trigger("reset");
-			$("email").trigger("reset");
-			$("question").trigger("reset");
+			// $("name").trigger("reset");
+			// $("email").trigger("reset");
+			// $("question").trigger("reset");
+			$("#MailForm").trigger("reset"); 
 		}
 		alert("Успешно отправлено!");
 		$("#send").prop("disabled", false);
 	}
 });
+
+}
+

@@ -177,7 +177,8 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <form id="MailForm">
+      <div class="modal-body">      	
       	<h6 class="text-center">В течении некоторого времени вам придет письмо с ответом</h6>
         <input type="text" class="form-control" name="user-name" id="name" placeholder="Ваше имя">
         <input type="text" class="form-control" name="user-email" id="email" placeholder="Ваше email">
@@ -186,8 +187,9 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-light" data-dismiss="modal">Отмена</button>
-        <button type="submit" id="send" onclick="Check()" class="btn btn-light">Отправить</button>
+        <button type="submit" id="send" onclick="Mail()" class="btn btn-light">Отправить</button>
       </div>
+  </form>
     </div>
   </div>
 </div>

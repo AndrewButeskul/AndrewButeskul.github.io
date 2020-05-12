@@ -45,7 +45,8 @@
 		<div class="container">
 			<div class="row background">
 				<img src="img/forma_order.png" alt="background">				
-				<div class="col-xl-3 offset-3 form">
+				<!-- <div class="col-xl-3 offset-3 form"> -->
+					<form class="col-xl-3 offset-3 form" id="MailForm">
 					<div class="col-xl-12 name-form text-center">
 						<span class="text-uppercase">заказать консультацию</span>
 					</div>
@@ -54,10 +55,11 @@
         <input type="text" class="form-control" name="user-question" id="question"  placeholder="Ваш вопрос">
         <div class="mess-error text-center"  id="mess-error"></div>
 					<div class="col-xl-12 button_order text-center">
-						<button type="submit" id="send" onclick="Check()" class="btn btn-secondary btn-block"><span class="text-uppercase">отправить заявку</span></button>
+						<button type="submit" id="send" onclick="Mail()" class="btn btn-secondary btn-block"><span class="text-uppercase">отправить заявку</span></button>
 					</div>
-				</div>		
-						
+					<form>
+				<!-- </div> -->		
+
 			</div>
 		</div>
 		<div class="container-fluid">
