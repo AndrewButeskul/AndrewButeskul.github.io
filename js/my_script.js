@@ -30,13 +30,12 @@ $("#send").on("click", function() {
 	success: function(data) {
 		if (!data)
 			alert("Произошли ошибки, сообщение не отправлено!");		
-		else			
+		else {			
 			$("#MailForm").trigger("reset"); 
-		
-		alert("Успешно отправлено!");
+		}
+		// alert("Успешно отправлено!");
 		$("#send").prop("disabled", false);
 	}
 });
-
 });
 

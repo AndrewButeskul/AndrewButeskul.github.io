@@ -86,11 +86,6 @@ body {
 	margin-top: 40px;
 }
 
-.modal h6 {
-	font-size: 14px;
-	opacity: 50%;  
-}
-
 .mess-error{
 	color: red;
 	font-size: 14px; 
@@ -242,4 +237,14 @@ figure img:hover{
 
 .info li:hover{
 	color: #D1A25F; 
+}
+
+.thank{
+	height: 400px;
+	background-color: #FAF4F0; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
 }
